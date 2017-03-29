@@ -16,6 +16,7 @@
 		BF62149C1E8C15680087EE18 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62149B1E8C15680087EE18 /* SearchResultsTableViewController.swift */; };
 		BF62149F1E8C193E0087EE18 /* FlickrImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62149E1E8C193E0087EE18 /* FlickrImage.swift */; };
 		BF6214A21E8C1D2B0087EE18 /* RemoteApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6214A11E8C1D2B0087EE18 /* RemoteApiService.swift */; };
+		BF6214A51E8C26ED0087EE18 /* FlickrImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6214A41E8C26ED0087EE18 /* FlickrImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF62149B1E8C15680087EE18 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		BF62149E1E8C193E0087EE18 /* FlickrImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImage.swift; sourceTree = "<group>"; };
 		BF6214A11E8C1D2B0087EE18 /* RemoteApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteApiService.swift; sourceTree = "<group>"; };
+		BF6214A41E8C26ED0087EE18 /* FlickrImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImageTableViewCell.swift; sourceTree = "<group>"; };
 		EB943E1BA38BC52D5FA20580 /* Pods_AetnaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AetnaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C412820103C52752CE52A3 /* Pods-AetnaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AetnaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AetnaDigital/Pods-AetnaDigital.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,9 +86,10 @@
 		BF6214871E8C14CD0087EE18 /* AetnaDigital */ = {
 			isa = PBXGroup;
 			children = (
+				BF6214A31E8C26BE0087EE18 /* Table Cells */,
 				BF6214A01E8C1D130087EE18 /* Services */,
 				BF62149D1E8C18100087EE18 /* Models */,
-				BF62149A1E8C15180087EE18 /* Views */,
+				BF62149A1E8C15180087EE18 /* Controllers */,
 				BF6214881E8C14CD0087EE18 /* AppDelegate.swift */,
 				BF62148C1E8C14CD0087EE18 /* Main.storyboard */,
 				BF62148F1E8C14CD0087EE18 /* Assets.xcassets */,
@@ -96,13 +99,13 @@
 			path = AetnaDigital;
 			sourceTree = "<group>";
 		};
-		BF62149A1E8C15180087EE18 /* Views */ = {
+		BF62149A1E8C15180087EE18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				BF62148A1E8C14CD0087EE18 /* MainViewController.swift */,
 				BF62149B1E8C15680087EE18 /* SearchResultsTableViewController.swift */,
 			);
-			name = Views;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		BF62149D1E8C18100087EE18 /* Models */ = {
@@ -119,6 +122,14 @@
 				BF6214A11E8C1D2B0087EE18 /* RemoteApiService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		BF6214A31E8C26BE0087EE18 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF6214A41E8C26ED0087EE18 /* FlickrImageTableViewCell.swift */,
+			);
+			name = "Table Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				BF6214891E8C14CD0087EE18 /* AppDelegate.swift in Sources */,
 				BF62149F1E8C193E0087EE18 /* FlickrImage.swift in Sources */,
 				BF62149C1E8C15680087EE18 /* SearchResultsTableViewController.swift in Sources */,
+				BF6214A51E8C26ED0087EE18 /* FlickrImageTableViewCell.swift in Sources */,
 				BF6214A21E8C1D2B0087EE18 /* RemoteApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

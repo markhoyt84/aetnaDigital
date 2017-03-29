@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import BoltsSwift
 
 class SearchResultsTableViewController: UITableViewController {
+    
+    var currentSearchString: String? {
+        didSet {
+            self.performSearch()
+        }
+    }
+    
+    
+    var currentSearchResults: [FlickrImage]? {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,64 +33,37 @@ class SearchResultsTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if let _results = self.currentSearchResults {
+            return _results.count
+        } else {
+            return 1
+        }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if let _results = self.currentSearchResults {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "image-cell", for: indexPath) as! FlickrImageTableViewCell
+            let currentImageForCell = _results[indexPath.row]
+            cell.currentImage = currentImageForCell
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if let _results = self.currentSearchResults {
+            return 200
+        } else {
+            return 50
+        }
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -90,5 +71,23 @@ class SearchResultsTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+}
+
+extension SearchResultsTableViewController {
+    
+    // MARK: - HTTP Methods
+    
+    fileprivate func performSearch() {
+        let remoteAPIService = RemoteAPIService()
+        remoteAPIService.fetchImagesWithSearchTerm(self.currentSearchString).continueWith { (task: Task!) -> AnyObject! in
+            if let _error = task.error {
+                print("Sorry there was an error performing this search")
+            } else {
+                if let _results = task.result as? [FlickrImage] {
+                    self.currentSearchResults = _results
+                }
+            }
+            return nil
+        }
+    }
 }

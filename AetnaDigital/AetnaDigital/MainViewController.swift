@@ -38,6 +38,15 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func performSearch() {
+        self.performSegue(withIdentifier: "perform-search", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "perform-search" {
+            if let _toViewController = segue.destination as? SearchResultsTableViewController {
+                _toViewController.currentSearchString = self.currentSearchString
+            }
+        }
     }
 }
 

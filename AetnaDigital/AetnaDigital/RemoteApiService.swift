@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import BoltsSwift
 import Alamofire
+import BoltsSwift
 
 open class RemoteAPIService {
     
