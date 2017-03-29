@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Bolts-Swift (1.3.0)
+  - Nuke (5.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - Bolts-Swift
+  - Nuke (~> 5.0)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bolts-Swift: fa98d1b59fc1acea9b21a21306dcdca1c85e3737
+  Nuke: 8ab71e77f6a54ff5fb697f93537c35f419bb01f7
+
+PODFILE CHECKSUM: efa70c12622fd31d38b447418c0e364a2ba499d6
+
+COCOAPODS: 1.1.1

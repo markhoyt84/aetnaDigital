@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72058E6B408F9332490B28FE /* Pods_AetnaDigital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB943E1BA38BC52D5FA20580 /* Pods_AetnaDigital.framework */; };
+		BF6214891E8C14CD0087EE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6214881E8C14CD0087EE18 /* AppDelegate.swift */; };
+		BF62148B1E8C14CD0087EE18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62148A1E8C14CD0087EE18 /* MainViewController.swift */; };
+		BF62148E1E8C14CD0087EE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF62148C1E8C14CD0087EE18 /* Main.storyboard */; };
+		BF6214901E8C14CD0087EE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF62148F1E8C14CD0087EE18 /* Assets.xcassets */; };
+		BF6214931E8C14CD0087EE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6214911E8C14CD0087EE18 /* LaunchScreen.storyboard */; };
+		BF62149C1E8C15680087EE18 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62149B1E8C15680087EE18 /* SearchResultsTableViewController.swift */; };
+		BF62149F1E8C193E0087EE18 /* FlickrImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62149E1E8C193E0087EE18 /* FlickrImage.swift */; };
+		BF6214A21E8C1D2B0087EE18 /* RemoteApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6214A11E8C1D2B0087EE18 /* RemoteApiService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		693608F002665C8613BC0D37 /* Pods-AetnaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AetnaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-AetnaDigital/Pods-AetnaDigital.release.xcconfig"; sourceTree = "<group>"; };
+		BF6214851E8C14CD0087EE18 /* AetnaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AetnaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6214881E8C14CD0087EE18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF62148A1E8C14CD0087EE18 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BF62148D1E8C14CD0087EE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF62148F1E8C14CD0087EE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF6214921E8C14CD0087EE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF6214941E8C14CD0087EE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF62149B1E8C15680087EE18 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		BF62149E1E8C193E0087EE18 /* FlickrImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImage.swift; sourceTree = "<group>"; };
+		BF6214A11E8C1D2B0087EE18 /* RemoteApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteApiService.swift; sourceTree = "<group>"; };
+		EB943E1BA38BC52D5FA20580 /* Pods_AetnaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AetnaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C412820103C52752CE52A3 /* Pods-AetnaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AetnaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AetnaDigital/Pods-AetnaDigital.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF6214821E8C14CD0087EE18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72058E6B408F9332490B28FE /* Pods_AetnaDigital.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EBA1B2D3837BFCBED0E6EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB943E1BA38BC52D5FA20580 /* Pods_AetnaDigital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E4085CE872B5F15BFF21B2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C412820103C52752CE52A3 /* Pods-AetnaDigital.debug.xcconfig */,
+				693608F002665C8613BC0D37 /* Pods-AetnaDigital.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF62147C1E8C14CD0087EE18 = {
+			isa = PBXGroup;
+			children = (
+				BF6214871E8C14CD0087EE18 /* AetnaDigital */,
+				BF6214861E8C14CD0087EE18 /* Products */,
+				6E4085CE872B5F15BFF21B2E /* Pods */,
+				4EBA1B2D3837BFCBED0E6EA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF6214861E8C14CD0087EE18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF6214851E8C14CD0087EE18 /* AetnaDigital.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF6214871E8C14CD0087EE18 /* AetnaDigital */ = {
+			isa = PBXGroup;
+			children = (
+				BF6214A01E8C1D130087EE18 /* Services */,
+				BF62149D1E8C18100087EE18 /* Models */,
+				BF62149A1E8C15180087EE18 /* Views */,
+				BF6214881E8C14CD0087EE18 /* AppDelegate.swift */,
+				BF62148C1E8C14CD0087EE18 /* Main.storyboard */,
+				BF62148F1E8C14CD0087EE18 /* Assets.xcassets */,
+				BF6214911E8C14CD0087EE18 /* LaunchScreen.storyboard */,
+				BF6214941E8C14CD0087EE18 /* Info.plist */,
+			);
+			path = AetnaDigital;
+			sourceTree = "<group>";
+		};
+		BF62149A1E8C15180087EE18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF62148A1E8C14CD0087EE18 /* MainViewController.swift */,
+				BF62149B1E8C15680087EE18 /* SearchResultsTableViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BF62149D1E8C18100087EE18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF62149E1E8C193E0087EE18 /* FlickrImage.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BF6214A01E8C1D130087EE18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF6214A11E8C1D2B0087EE18 /* RemoteApiService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF6214841E8C14CD0087EE18 /* AetnaDigital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF6214971E8C14CD0087EE18 /* Build configuration list for PBXNativeTarget "AetnaDigital" */;
+			buildPhases = (
+				3FD130CF075DA62FF7D9F286 /* [CP] Check Pods Manifest.lock */,
+				BF6214811E8C14CD0087EE18 /* Sources */,
+				BF6214821E8C14CD0087EE18 /* Frameworks */,
+				BF6214831E8C14CD0087EE18 /* Resources */,
+				659315D3BE212DA5D8C6B916 /* [CP] Embed Pods Frameworks */,
+				781EFAEF424CE1535D78C334 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AetnaDigital;
+			productName = AetnaDigital;
+			productReference = BF6214851E8C14CD0087EE18 /* AetnaDigital.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF62147D1E8C14CD0087EE18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Mark Hoyt";
+				TargetAttributes = {
+					BF6214841E8C14CD0087EE18 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF6214801E8C14CD0087EE18 /* Build configuration list for PBXProject "AetnaDigital" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF62147C1E8C14CD0087EE18;
+			productRefGroup = BF6214861E8C14CD0087EE18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF6214841E8C14CD0087EE18 /* AetnaDigital */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF6214831E8C14CD0087EE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6214931E8C14CD0087EE18 /* LaunchScreen.storyboard in Resources */,
+				BF6214901E8C14CD0087EE18 /* Assets.xcassets in Resources */,
+				BF62148E1E8C14CD0087EE18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FD130CF075DA62FF7D9F286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		659315D3BE212DA5D8C6B916 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AetnaDigital/Pods-AetnaDigital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		781EFAEF424CE1535D78C334 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AetnaDigital/Pods-AetnaDigital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF6214811E8C14CD0087EE18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF62148B1E8C14CD0087EE18 /* MainViewController.swift in Sources */,
+				BF6214891E8C14CD0087EE18 /* AppDelegate.swift in Sources */,
+				BF62149F1E8C193E0087EE18 /* FlickrImage.swift in Sources */,
+				BF62149C1E8C15680087EE18 /* SearchResultsTableViewController.swift in Sources */,
+				BF6214A21E8C1D2B0087EE18 /* RemoteApiService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF62148C1E8C14CD0087EE18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF62148D1E8C14CD0087EE18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF6214911E8C14CD0087EE18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF6214921E8C14CD0087EE18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF6214951E8C14CD0087EE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF6214961E8C14CD0087EE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF6214981E8C14CD0087EE18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C412820103C52752CE52A3 /* Pods-AetnaDigital.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AetnaDigital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AetnaDigital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF6214991E8C14CD0087EE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693608F002665C8613BC0D37 /* Pods-AetnaDigital.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AetnaDigital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AetnaDigital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF6214801E8C14CD0087EE18 /* Build configuration list for PBXProject "AetnaDigital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6214951E8C14CD0087EE18 /* Debug */,
+				BF6214961E8C14CD0087EE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF6214971E8C14CD0087EE18 /* Build configuration list for PBXNativeTarget "AetnaDigital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF6214981E8C14CD0087EE18 /* Debug */,
+				BF6214991E8C14CD0087EE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF62147D1E8C14CD0087EE18 /* Project object */;
+}
